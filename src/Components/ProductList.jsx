@@ -28,7 +28,7 @@ const ProductList = () => {
               onClick={() => handleAddToCart(product)}
               disabled={cartItems.some(item => item.id === product.id)}
             >
-              {cartItems.som(item => item.id === product.id)? 'Added':'Add to cart'}
+              {cartItems.some(item => item.id === product.id)? 'Added':'Add to cart'}
             </button>
           </li>
         ))}
